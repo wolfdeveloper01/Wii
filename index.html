@@ -12,33 +12,54 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <style>
         body {
-            background: url('https://i.imgur.com/aWJ1m5J.png') no-repeat center center fixed; /* Background similar to Wii */
+            background: url('./assets/BackgroundHome.png') no-repeat center center fixed; /* Background similar to Wii */
             background-size: cover;
             font-family: 'Arial', sans-serif;
         }
         .channel {
+            position: relative;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 100px;
+            width: 150px;
+            height: 120px;
             background: white;
-            border-radius: 10px;
+            border-radius: 15px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.2s, box-shadow 0.2s;
+            overflow: hidden;
         }
         .channel:hover {
             transform: scale(1.1);
             box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
         }
+        .channel img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        .channel p {
+            position: relative;
+            z-index: 2;
+            color: #333;
+            font-size: 14px;
+            font-weight: bold;
+            margin: 0;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
         .channel-grid {
             display: grid;
             grid-template-columns: repeat(3, 1fr);
             gap: 20px;
+            justify-content: center;
             margin-top: 50px;
-        }
-        .channel .material-icons {
-            font-size: 48px;
-            color: #0073e6;
         }
     </style>
 </head>
@@ -46,30 +67,30 @@
     <div class="container text-center mt-5">
         <h1 class="text-white">Nintendo Wii - Home</h1>
         <div class="channel-grid">
-            <!-- Example channels -->
+            <!-- Wii-style channels -->
             <div class="channel">
-                <span class="material-icons">sports_esports</span>
-                <p class="m-0 ms-3">Games</p>
+                <img src="./assets/channel_games.png" alt="Games">
+                <p>Games</p>
             </div>
             <div class="channel">
-                <span class="material-icons">settings</span>
-                <p class="m-0 ms-3">Settings</p>
+                <img src="./assets/channel_settings.png" alt="Settings">
+                <p>Settings</p>
             </div>
             <div class="channel">
-                <span class="material-icons">video_library</span>
-                <p class="m-0 ms-3">Videos</p>
+                <img src="./assets/channel_videos.png" alt="Videos">
+                <p>Videos</p>
             </div>
             <div class="channel">
-                <span class="material-icons">cloud_download</span>
-                <p class="m-0 ms-3">Download</p>
+                <img src="./assets/channel_download.png" alt="Download">
+                <p>Download</p>
             </div>
             <div class="channel">
-                <span class="material-icons">info</span>
-                <p class="m-0 ms-3">About</p>
+                <img src="./assets/channel_about.png" alt="About">
+                <p>About</p>
             </div>
             <div class="channel">
-                <span class="material-icons">help</span>
-                <p class="m-0 ms-3">Help</p>
+                <img src="./assets/channel_help.png" alt="Help">
+                <p>Help</p>
             </div>
         </div>
     </div>
