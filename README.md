@@ -68,7 +68,7 @@ Os dados são disponibilizados via uma API criada no Google Apps Script, retorna
 </a>
 
 ## 📝 Licença
-Este projeto está sob a licença **MIT**. Consulte o arquivo `LICENSE` para mais informações.
+Este projeto está sob a licença **GPL-3.0**. Consulte o arquivo `LICENSE` para mais informações.
 
 ---
 
