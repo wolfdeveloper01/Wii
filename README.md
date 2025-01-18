@@ -54,7 +54,7 @@ Os dados são disponibilizados via uma API criada no Google Apps Script, retorna
 ![Página Inicial](./assets/index.png)
 
 ### Lista de Aplicativos
-![Lista de Aplicativos](./assets/apps.p)
+![Lista de Aplicativos](./assets/apps.png)
 
 ## 📌 Melhorias Futuras
 - Adicionar sistema de busca e filtros.
